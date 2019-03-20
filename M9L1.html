@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mengubah teks menjadi JSON Object</title>
+</head>
+<body>
+
+<h2>Create object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+	var txt = '{"name":"Siti Hartina", "age":20, "city":" New York"}'
+	var obj =JSON.parse(txt);
+	document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + obj.city;
+</script>
+</body>
+</html>
